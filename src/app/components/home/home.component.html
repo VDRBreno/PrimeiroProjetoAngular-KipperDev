@@ -1,0 +1,25 @@
+<app-footer></app-footer>
+
+{{ name }}
+
+<button (click)="setCounter(counter + 1)">Click me ({{ counter }} clicks)</button>
+
+<input type="text" [value]=""  />
+
+<br/>
+counter é
+@if(counter%2===0) {
+  par
+} @else {
+  impar
+}
+
+<br/>
+
+@for(item of lista; track item) {
+  <span>{{ item }} </span>
+} @empty {
+  <p>lista vazia</p>
+}
+
+<!-- <img [src]="catUrl" /> -->
